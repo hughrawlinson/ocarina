@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MHD2014</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="Tone.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="/meyda/lib/jsfft/complex_array.js"></script>
+	<script type="text/javascript" src="/meyda/lib/jsfft/fft.js"></script>
+	<script type="text/javascript" src="/meyda/meyda.js"></script>
+</head>
+<body>
+<h1>Ocarina</h1>
+<div id='slider' style="width:20px;height:20px;background-color:#F00;float:left;"></div>
+<div class="container">
+	<div class="spacer"></div>
+	<div data-noteIndex="1"class="circle TL"></div>
+	<div data-noteIndex="2"class="circle TR"></div>
+	<div data-noteIndex="0"class="circle BL"></div>
+	<div data-noteIndex="3"class="circle BR"></div>
+</div>
+<style>
+.container{
+	width:310px;
+	margin-left:30px;
+}
+.circle{
+	height:140px;
+	width:140px;
+	border-radius:75px;
+	background-color:#FF636A;
+	border-color: #FF1621;
+}
+.BR, .BL{
+	margin-top:10px;
+}
+.TR, .BR, .spacer{
+	float:right;
+}
+
+.spacer{
+	width:150px;
+	height:50px;
+}
+
+.TL, .BL{
+	float:left;
+}
+</style>
+</body>
+</html>
